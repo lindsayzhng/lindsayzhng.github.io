@@ -6,8 +6,8 @@ import background from './resources/windows.png'
 
 function App() {
   return (
-    <div>
-      <img class="bg" src={background} alt="" />
+    <div className='bg'>
+      {/* <img class="bg" src={background} alt="" /> */}
       <Header></Header>
       {/* <emailPopup></emailPopup> */}
     </div>
