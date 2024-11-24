@@ -12,16 +12,17 @@ function AboutMe(){
     return(
         <div class = "outer-box">
             <div class = "me-box">
-                <h1 class = "name-pos">itslinds</h1>
+                <h1 class = "name-pos">linds</h1>
                 <div class = "grad">
                     <img class = "angel" src={me} alt='angel'/>
-                    <img class = "eye" src={eyeball} alt='eye'/> {/*TODO: make eyeball move with cursor?*/}
+                    <img class = "eye" src={eyeball} alt='eye'/> {/*TODO: make eyeball move with cursor? and maybe make it blink*/}
                 </div>
-                <div class = "frog-box"
+                <div class = "frog-box"> {/* frog animation lol TODO: Speech bubble :)*/}
+                    <img class = 'frog' src = {over? froggasp: frogchill}
                     onMouseOver={() => click && !over ? setOver(false): setOver(true)}
                     onMouseOut={() => click ? setOver(true): setOver(false)}
-                    onMouseDown={() => setClicked(!click)}> {/* frog animation lol */}
-                    <img class = 'frog' src = {over? froggasp: frogchill}/>
+                    onMouseDown={() => setClicked(!click)}
+                    />
                 </div>
             </div>
         </div>
