@@ -1,0 +1,49 @@
+h1{
+    font-family: Arial;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.outer-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name-pos{
+    position: absolute;
+    margin-top: 10px;
+}
+
+.me-box{
+    margin-left: -50%;
+}
+
+.frog-box{
+    margin-left: 100%;
+}
+
+.grad{
+    padding: 80px;
+    background-image: radial-gradient(rgba(255,255,255,1) 30%,rgba(125,185,232,0) 60%);
+}
+
+.angel {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eye{
+    margin-top: -130px;
+    max-width: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frog{
+    max-width: 300px;
+}
