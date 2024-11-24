@@ -9,6 +9,11 @@ function AboutMe(){
     const [over, setOver] = useState(false);
     const [click, setClicked] = useState(false);
 
+    const handleToggle = () => {
+        setClicked(!click); // Toggle the clicked state
+        setOver(!click); // Update the hover state
+    };
+
     return(
         <div class = "outer-box">
             <div class = "me-box">
@@ -18,10 +23,10 @@ function AboutMe(){
                     <img class = "eye" src={eyeball} alt='eye'/> {/*TODO: make eyeball move with cursor? and maybe make it blink*/}
                 </div>
                 <div class = "frog-box"> {/* frog animation lol TODO: Speech bubble :)*/}
-                    <img class = 'frog' src = {over? froggasp: frogchill}
-                    onMouseOver={() => click && !over ? setOver(false): setOver(true)}
-                    onMouseOut={() => click ? setOver(true): setOver(false)}
-                    onMouseDown={() => setClicked(!click)}
+                    <img class = 'frog' src = {over ? froggasp: frogchill}
+                    onMouseOver={() => click ? setOver(click): setOver(!click)}
+                    onMouseOut={() => setOver(click)}
+                    onClick={() => handleToggle()}
                     />
                 </div>
             </div>
