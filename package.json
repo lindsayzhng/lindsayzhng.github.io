@@ -2,12 +2,14 @@
   "name": "personal",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lindsayzhng.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "7.css": "^0.17.0",
     "98.css": "^0.1.20",
+    "gh-pages": "^6.2.0",
     "react": "^18.2.0",
     "react-countdown": "^2.3.6",
     "react-dom": "^18.2.0",
@@ -18,6 +20,8 @@
     "webpack": "4.42.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

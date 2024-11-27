@@ -5,7 +5,7 @@ import AboutMe from './pages/AboutMe.js';
 function App() {
   return (
     <div>
-      <div class = "background" style={{ minHeight: '100vh' }} />
+      <div class = "background" />
       <AboutMe />
     </div>
   );
