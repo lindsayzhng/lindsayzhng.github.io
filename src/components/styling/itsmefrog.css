@@ -1,0 +1,87 @@
+h1 {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight:bold;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    color: #0072b1;
+    text-decoration: underline #0072b1;
+}
+
+.line{
+    height: 15px;
+    text-align:left;
+    margin-left:0;
+    border-style: hidden;
+}
+
+.inner-box{
+    grid-area: myText;
+    min-width: 400px;
+}
+
+.outer-box {
+    position: absolute;
+    display: grid;
+    grid-template-areas: "myText meFrog";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frog-box {
+    grid-area: meFrog;
+    min-width: fit-content;
+}
+
+.frog {
+    max-width: 300px;
+}
+
+.yell{
+    position: absolute;
+    top: 60px;
+    left: 400px;
+    max-width: 60px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 1rem; /* Adjust font sizes */
+    }
+
+    .outer-box {
+        display: block; /* Stack items vertically */
+        text-align: center; /* Center align for simplicity */
+        grid-template-areas: 'myText'
+        'meFrog';
+    }
+
+    .inner-box, .frog-box {
+        margin: 10px auto; /* Center inner elements */
+        min-width: auto;
+    }
+
+    .frog {
+        max-width: 150px; /* Reduce image size further */
+    }
+
+    .yell {
+        position: relative;
+        top: -80px;
+        left: -150px;
+        margin: 0 auto;
+        max-width: 25px; /* Scale down */
+    }
+}
