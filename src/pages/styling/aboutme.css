@@ -1,0 +1,65 @@
+h1 {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.name-pos {
+    position: absolute;
+    margin-top: 10px;
+}
+
+.me-box {
+    margin-left: -50%;
+}
+
+.grad {
+    padding: 80px;
+    background-image: radial-gradient(rgba(255, 255, 255, 1) 30%, rgba(125, 185, 232, 0) 60%);
+}
+
+.angel {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eye {
+    margin-top: -130px;
+    max-width: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; 
+        text-align: center; 
+    }
+
+    .name-pos {
+        margin-top: 5px; 
+    }
+
+    .me-box {
+        margin-left: 0; 
+        text-align: center;
+    }
+
+    .grad {
+        padding: 40px; 
+    }
+
+    .angel {
+        max-width: 90%; 
+    }
+
+    .eye {
+        margin-top: -30%; 
+        max-width: 15%; 
+    }
+
+}
