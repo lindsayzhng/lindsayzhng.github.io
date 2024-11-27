@@ -1,6 +1,6 @@
 import './App.css';
 import './background.css'
-import AboutMe from './components/aboutme';
+import AboutMe from './pages/AboutMe.js';
 
 function App() {
   return (

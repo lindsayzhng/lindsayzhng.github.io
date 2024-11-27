@@ -1,0 +1,80 @@
+h1 {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight:bold;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    color: #0072b1;
+    text-decoration: underline #0072b1;
+}
+
+.line{
+    height: 15px;
+    text-align:left;
+    margin-left:0;
+    border-style: hidden;
+}
+
+.inner-box{
+    grid-area: myText;
+    min-width: 400px;
+}
+
+.outer-box {
+    position: absolute;
+    display: grid;
+    grid-template-areas: "myText meFrog";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frog-box {
+    grid-area: meFrog;
+    min-width: fit-content;
+}
+
+.frog {
+    max-width: 300px;
+}
+
+.yell{
+    position: absolute;
+    top: 60px;
+    left: 400px;
+    max-width: 60px;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; 
+        text-align: center; 
+    }
+
+    .outer-box {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%; 
+    }
+
+    .frog-box {
+        margin-left: 0; 
+        text-align: center;
+    }
+
+    .frog {
+        max-width: 60%; 
+    }
+}
