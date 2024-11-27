@@ -56,25 +56,33 @@ h3 {
 }
 
 /* Mobile styles */
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 1.5rem; 
-        text-align: center; 
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 1rem; /* Adjust font sizes */
     }
 
     .outer-box {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%; 
+        display: block; /* Stack items vertically */
+        text-align: center; /* Center align for simplicity */
+        grid-template-areas: 'myText'
+        'meFrog';
     }
 
-    .frog-box {
-        margin-left: 0; 
-        text-align: center;
+    .inner-box, .frog-box {
+        margin: 10px auto; /* Center inner elements */
+        border-style: dotted;
+        min-width: auto;
     }
 
     .frog {
-        max-width: 60%; 
+        max-width: 150px; /* Reduce image size further */
+    }
+
+    .yell {
+        position: relative;
+        top: -80px;
+        left: -150px;
+        margin: 0 auto;
+        max-width: 25px; /* Scale down */
     }
 }

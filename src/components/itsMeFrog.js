@@ -29,22 +29,22 @@ function ItsMeFrog(){
             </div>
             <div class = 'inner-box'>
                 {over && click &&
-            <div>
-                <h1>Hii!</h1>
-                <h2>I'm Lindsay! You can call me Linds
-                </h2>
+                <div>
+                    <h1>Hii!</h1>
+                    <h2>I'm Lindsay! You can call me Linds
+                    </h2>
 
-                <img src = {sketchyLine} class = 'line'/>
+                    <img src = {sketchyLine} class = 'line'/>
 
-                <h2>
-                This website is under construction 
-                please come back later ^-^
-                </h2>
+                    <h2>
+                    This website is under construction 
+                    please come back later ^-^
+                    </h2>
 
-                <h3 onClick={handleLinkedInClick}>
-                    my LinkedIn
-                </h3>
-            </div>}
+                    <h3 onClick={handleLinkedInClick}>
+                        my LinkedIn
+                    </h3>
+                </div>}
             </div>
             
         </div>
