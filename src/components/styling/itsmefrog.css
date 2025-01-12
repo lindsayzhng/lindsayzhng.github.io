@@ -46,6 +46,7 @@ h3 {
 
 .frog {
     max-width: 300px;
+    cursor: pointer;
 }
 
 .yell{
