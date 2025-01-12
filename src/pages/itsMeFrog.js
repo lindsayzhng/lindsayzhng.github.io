@@ -10,11 +10,14 @@ import lilypad_acute_hover from '../resources/icons/lilypads/lilypad_acute_githu
 import lilypad_right_hover from '../resources/icons/lilypads/lilypad_right_me.png';
 import lilypad_flower_hover from '../resources/icons/lilypads/lilypad_flower_library.png';
 import lilypad_big_hover from '../resources/icons/lilypads/lilypad_big_linkedin.png';
+import useOnclickOutside from "react-cool-onclickoutside";
+import AboutMe from '../components/aboutMe'
 import './styling/itsmefrog.css';
 
 function ItsMeFrog() {
     const [over, setOver] = useState(false);
     const [click, setClicked] = useState(false);
+    const [aboutMeClick, setAboutMeClick] = useState(false);
 
     const handleToggle = () => {
         setClicked(!click); // Toggle the clicked state
@@ -24,10 +27,15 @@ function ItsMeFrog() {
     const handleClick = (link) => {
         window.location.href = link; // Redirect to the specified link
     };
+    const ref = useOnclickOutside(() => {
+        setAboutMeClick(false);
+      });
 
     const hoveringClickable = {cursor: over ? 'pointer' : undefined}
 
     return (
+        <div >
+
         <div className="outer-box">
             <img
                 className="big_lily"
@@ -53,6 +61,8 @@ function ItsMeFrog() {
             <img
                 className="right_lily"
                 src={over ? lilypad_right_hover : lilypad_right}
+                onClick={over ? () => setAboutMeClick(!aboutMeClick) : undefined }
+                style = {hoveringClickable}
                 alt="meSection"
             />
 
@@ -66,6 +76,10 @@ function ItsMeFrog() {
                 <img className="frog" src={over ? froggasp : frogchill} alt="Frog" />
                 {over && <img className="yell" src={yell} alt="Yell Icon" />}
             </div>
+        </div>
+        <div ref = {ref}>
+            {aboutMeClick && <AboutMe />}
+        </div>
         </div>
     );
 }

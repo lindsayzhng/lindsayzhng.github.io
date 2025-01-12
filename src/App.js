@@ -1,10 +1,10 @@
 import './App.css';
-import AboutMe from './pages/AboutMe.js';
+import ItsMeFrog from './pages/itsMeFrog.js';
 
 function App() {
   return (
     <div>
-      <AboutMe />
+      <ItsMeFrog />
     </div>
   );
 }
