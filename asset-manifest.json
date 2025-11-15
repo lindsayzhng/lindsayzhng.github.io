@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.c8146cd5.css",
-    "main.js": "/static/js/main.a327aae4.js",
+    "main.css": "/static/css/main.87fa00ef.css",
+    "main.js": "/static/js/main.88282127.js",
     "static/js/511.d5ffad6b.chunk.js": "/static/js/511.d5ffad6b.chunk.js",
-    "static/media/selfie.png": "/static/media/selfie.fa6237876be4bb9dcef5.png",
     "static/media/froggasp.png": "/static/media/froggasp.ad64fcf619286a6cb9b4.png",
     "static/media/chillfrog.png": "/static/media/chillfrog.724cfd779d34b2d39cb2.png",
     "static/media/lilypad_big.png": "/static/media/lilypad_big.7e9b4d8905aca4cec33e.png",
@@ -12,18 +11,19 @@
     "static/media/lilypad_flower_library.png": "/static/media/lilypad_flower_library.6278fdff7ab13450c67e.png",
     "static/media/lilypad_acute.png": "/static/media/lilypad_acute.d4f029ea7999a3d9d85e.png",
     "static/media/lilypad_acute_github.png": "/static/media/lilypad_acute_github.25539f5d2c6bc8e495ed.png",
+    "static/media/selfie.jpeg": "/static/media/selfie.66b58b655cdd3c694d41.jpeg",
     "static/media/lilypad_right.png": "/static/media/lilypad_right.68a936a2a22dd92dc3e2.png",
     "static/media/lilypad_right_me.png": "/static/media/lilypad_right_me.efa5622fc3e17c0ee7f1.png",
     "static/media/footer.png": "/static/media/footer.be2862a71761ee0a7345.png",
     "static/media/Windows Regular.ttf": "/static/media/Windows Regular.1418bf0ef20f202d5c85.ttf",
     "static/media/se_webring.svg": "/static/media/se_webring.ee3dad36042697317151697b8d74f9e2.svg",
     "index.html": "/index.html",
-    "main.c8146cd5.css.map": "/static/css/main.c8146cd5.css.map",
-    "main.a327aae4.js.map": "/static/js/main.a327aae4.js.map",
+    "main.87fa00ef.css.map": "/static/css/main.87fa00ef.css.map",
+    "main.88282127.js.map": "/static/js/main.88282127.js.map",
     "511.d5ffad6b.chunk.js.map": "/static/js/511.d5ffad6b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8146cd5.css",
-    "static/js/main.a327aae4.js"
+    "static/css/main.87fa00ef.css",
+    "static/js/main.88282127.js"
   ]
 }
